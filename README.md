@@ -4,8 +4,6 @@
 
 DocMind RAG explores how to retrieve relevant passages from PDF documents using **local sentence embeddings** and **ChromaDB**, then provide those passages to **Google Gemini** to generate a contextual answer.
 
-> **Project status: educational prototype (work in progress).** The notebook contains the main building blocks of a RAG pipeline, but the current exported code needs the fixes described in [Known issues](#known-issues-before-running). This repository does not claim production readiness or measured retrieval accuracy.
-
 ## Overview
 
 A conventional language model may not know the contents of a private document. Retrieval-Augmented Generation adds a document-search step before generation:
@@ -48,17 +46,6 @@ flowchart TD
 **API costs:** The local embeddings and local ChromaDB operations do not incur model API charges. Gemini API availability and free-tier quotas depend on the account, model, and current provider terms. A Google API key may be necessary for the generation step.
 
 ## Repository layout
-
-Suggested layout when publishing the notebook:
-
-```text
-DocMind-RAG/
-├── notebooks/
-│   └── docmind_rag.ipynb
-├── README.md
-├── requirements.txt
-└── .gitignore
-```
 
 The uploaded project was exported from Colab as a `.py` file. Publishing the original `.ipynb` is preferable because GitHub can display notebook code and Markdown sections together. The example layout is a recommendation, **not** a claim that these files are already present.
 
