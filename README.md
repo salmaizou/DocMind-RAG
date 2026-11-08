@@ -1,4 +1,4 @@
-# DocMind RAG 🧠📄
+# DocMind RAG 
 
 **A document question-answering prototype powered by Retrieval-Augmented Generation (RAG).**
 
